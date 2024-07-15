@@ -1,0 +1,39 @@
+GET http://localhost:8070/v1/vehicles
+
+###
+
+GET http://localhost:8070/v1/vehicles/1
+
+###
+
+POST http://localhost:8070/v1/vehicles
+Content-Type: application/json
+
+{
+  "vin": "56935576504",
+  "make": "HAFEI",
+  "model": "Towner Passageiro 1.0 8V 48cv 7L 5p",
+  "plate": "ABC-1234",
+  "color": "Branco",
+  "year": 2009,
+  "isOlder": false
+}
+
+###
+
+PUT http://localhost:8070/v1/vehicles/1
+Content-Type: application/json
+
+{
+  "vin": "FR456935576506",
+  "make": "HAFEI",
+  "model": "Towner Passageiro 1.0 8V 48cv 7L 4p",
+  "plate": "ABC-1236",
+  "color": "Azul",
+  "year": 2010,
+  "isOlder": false
+}
+
+###
+
+DELETE http://localhost:8070/v1/vehicles/2
